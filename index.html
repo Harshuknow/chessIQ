@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChessIQ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="floating piece1">♔</div>
+<div class="floating piece2">♕</div>
+<div class="floating piece3">♘</div>
+<div class="floating piece4">♙</div>
+
+<header>
+  <nav>
+    <h1>ChessIQ ♟</h1>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#join">Join</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Welcome to ChessIQ ♟</h2>
+    <h3>Where Kids Become Smart Thinkers</h3>
+    <p>Helping kids aged 5–16 improve focus, confidence and decision making through chess.</p>
+
+    <div class="hero-buttons">
+      <a href="#join" class="btn">Join Now</a>
+      <a href="https://wa.me/919990400166" class="btn secondary">WhatsApp</a>
+      <a href="https://instagram.com/chessiq007" class="btn secondary">Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>Why Chess for Kids?</h2>
+  <div class="cards">
+    <div class="card">🧠 Improve Focus</div>
+    <div class="card">⚡ Stronger Memory</div>
+    <div class="card">🏆 Winning Mindset</div>
+    <div class="card">🎯 Better Decisions</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Learning Made Fun 🎯</h2>
+  <div class="cards">
+    <div class="card">♟ Chess Puzzles</div>
+    <div class="card">🔥 Challenges</div>
+    <div class="card">🏅 Certificates</div>
+    <div class="card">🏆 Tournaments</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>ChessIQ 4-Step Formula</h2>
+  <div class="cards">
+    <div class="card">1. Opponent’s Threat</div>
+    <div class="card">2. Loose Pieces</div>
+    <div class="card">3. Improve Worst Piece</div>
+    <div class="card">4. Candidate Moves</div>
+  </div>
+</section>
+
+<section id="courses" class="section">
+  <h2>Courses</h2>
+  <div class="course-box">
+    <h3>Group Classes</h3>
+    <p>₹1500 / Month</p>
+    <ul>
+      <li>Live Classes</li>
+      <li>Practice Matches</li>
+      <li>Puzzles</li>
+      <li>Homework</li>
+    </ul>
+  </div>
+</section>
+
+<section id="join" class="section join-section">
+  <h2>Join ChessIQ</h2>
+  <form id="joinForm">
+    <input id="student" type="text" placeholder="Student Name" required>
+    <input id="age" type="number" placeholder="Age" required>
+    <input id="parent" type="text" placeholder="Parent Name" required>
+    <input id="whatsapp" type="tel" placeholder="WhatsApp Number" required>
+
+    <select id="level" required>
+      <option>Beginner</option>
+      <option>Intermediate</option>
+      <option>Advanced</option>
+    </select>
+
+    <select id="batch" required>
+      <option>Weekday Batch</option>
+      <option>Weekend Batch</option>
+    </select>
+
+    <button type="submit">Submit</button>
+    <p id="statusMessage"></p>
+  </form>
+</section>
+
+<div id="paymentPopup" class="popup">
+  <div class="popup-content">
+    <h2>Registration Submitted 🎉</h2>
+    <p>Please complete payment to reserve your seat.</p>
+    <h3>Fee: ₹1500</h3>
+    <img src="mypay.png" alt="Payment QR">
+    <button id="paidBtn">I Have Paid</button>
+    <button onclick="closePopup()">Cancel</button>
+  </div>
+</div>
+
+<footer>
+  <p>WhatsApp: 9990400166</p>
+  <p>Instagram: @chessiq007</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
